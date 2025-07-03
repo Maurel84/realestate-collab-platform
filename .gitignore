@@ -1,0 +1,15 @@
+# Fichiers sensibles
+app/config/database.php
+app/config/config.php
+
+# Fichiers d'environnement
+.env
+.env.local
+
+# Fichiers de cache
+/vendor/
+/composer.lock
+
+# Fichiers uploadés
+/public/uploads/
+/tmp/
