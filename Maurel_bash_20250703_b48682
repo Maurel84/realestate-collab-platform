@@ -1,0 +1,19 @@
+# Clonez le dépôt vide
+git clone https://github.com/votre-utilisateur/realestate-collab-platform.git
+cd realestate-collab-platform
+
+# Créez la structure de dossiers
+mkdir -p app/{config,controllers,models,views/{auth,properties,tenants,owners,agencies,includes},libs}
+mkdir -p public/assets/{css,js,images}
+mkdir sql
+
+# Créez les fichiers principaux
+touch .htaccess README.md app/config/{database.php,config.php} public/index.php sql/install.sql
+touch app/controllers/{AuthController.php,PropertyController.php,TenantController.php,OwnerController.php,AgencyController.php,PaymentController.php}
+touch app/models/{User.php,Property.php,Tenant.php,Owner.php,Agency.php,Notification.php}
+touch public/assets/css/style.css public/assets/js/main.js
+
+# Initialisez le dépôt Git
+git add .
+git commit -m "Initial project structure"
+git push origin main
